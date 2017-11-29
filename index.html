@@ -1,11 +1,118 @@
 <!DOCTYPE html>
 <html>
+<!-- .........................CABEZA.................................-->
   <head>
     <meta charset="utf-8">
     <title>Data Dashboard</title>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+
   </head>
+  <!-- ...........................CUERPO.............................-->
   <body>
 
+    <header>
+      <div class="box1"><i class="fa fa-bars fa-3x" aria-hidden="true"></i></div>
+      <div class="box2"><img src="assets/images/logo-laboratoria.png" alt="logo-laboratoria"></div>
+      <div class="box3"><i class="fa fa-user-circle-o fa-3x" aria-hidden="true"></i> HOLA!, Valeria Schmidt</div>
+  	</header>
+    <!-- menu desplegable -->
+    <nav id="menu">
+      <ul>
+        <li>Sedes</li>
+      <!-- start menu desplegable -->
+          <ul>
+            <li>Peru</li>
+              <ul>
+                <li>Lima</li>
+                  <ul>
+                    <li>2017-2</li>
+                    <li>2017-1</li>
+                    <li>2016-2</li>
+                  </ul>
+                <li>Arequipa</li>
+                <ul>
+                  <li>2017-1</li>
+                  <li>2016-2</li>
+                </ul>
+              </ul>
+            <li>Chile</li>
+              <ul>
+                <li>Santiago de Chile</li>
+                <ul>
+                  <li>2017-2</li>
+                  <li>2017-1</li>
+                  <li>2016-2</li>
+                </ul>
+              </ul>
+
+            <li>Mexico</li>
+              <ul>
+                <li>Ciudad de Mexico</li>
+                <ul>
+                  <li>2017-2</li>
+                  <li>2017-1</li>
+                </ul>
+              </ul>
+          </ul>
+      </ul>
+    </nav>
+
+    <section id="seccionContenido" class="contenedor">
+      <ul class="contenedorTabs">
+        <li class="inline"><button type="button" name="button" data-tab-seleccionado="tabEstadisticas" class="tab">Estadisticas</button></li>
+        <li class="inline"><button type="button" name="button" data-tab-seleccionado="tabAlumnas" class="tab">Alumnas</button></li>
+      </ul>
+
+      <div class="">
+
+        <article id="estadisticas" class="contenido">
+          <div class="stadistics-row1"></div>
+          <div class="stadistics-row1"></div>
+          <div class="stadistics-row1"></div>
+          <div class="stadistics-row2"></div>
+          <div class="stadistics-row3"></div>
+          <div class="stadistics-row4"></div>
+          <div class="stadistics-row4"></div>
+          <div class="stadistics-row4"></div>
+        </article>
+
+        <article id="alumnas" class="contenido">
+          <div class="">
+            <div class="alumnas-row1"></div>
+            <div class="alumnas-row1"></div>
+            <div class="alumnas-row1"></div>
+          </div>
+          <div class="">
+            <div class="alumnas-row2"></div>
+            <div class="alumnas-row2"></div>
+            <div class="alumnas-row2"></div>
+          </div>
+          <div class="">
+            <div class="alumnas-row3"></div>
+            <div class="alumnas-row3"></div>
+            <div class="alumnas-row3"></div>
+          </div>
+          <div class="">
+            <div class="alumnas-row4"></div>
+            <div class="alumnas-row4"></div>
+            <div class="alumnas-row4"></div>
+          </div>
+          <div class="">
+            <div class="alumnas-row5"></div>
+            <div class="alumnas-row5"></div>
+            <div class="alumnas-row5"></div>
+          </div>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+
+<!-- -->
 		<!-- Base de datos -->
 		<script src="./js/data.js"></script>
 		<!-- Aquí va tus archivos JS -->
