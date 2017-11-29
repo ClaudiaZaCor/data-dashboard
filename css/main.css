@@ -1,3 +1,90 @@
-/*
- * Estilos de tu proyecto
- */
+/* ............................GENERALES................................*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  outline: 1px solid green;
+}
+header {
+  text-align: center;
+  height: 12vh;
+  width: 99.9%;
+}
+nav {
+  width: 12%;
+  position: absolute;
+}
+section {
+  position: relative;
+  left: 12%;
+}
+
+
+/* ...............................HEADER.................................*/
+.box1, .box2, .box3 {
+  display: inline-block;
+  height: 10vh;
+}
+.box1 {
+  float: left;
+  width: 8vw;
+}
+.box2 {
+  width: 16vw;
+}
+header div img {
+  height: 8vh;
+  width: 16vw;
+}
+.box3 {
+  float: right;
+  width: 24vw;
+  font-weight: 600;
+}
+li {
+  padding: 2%;
+}
+.inline {
+  display: inline-block;
+}
+
+
+section .stadistics-row1, section .stadistics-row4 {
+  margin: 1% 2% ;
+  background-color: green;
+  display: inline-block;
+  height: 20vh;
+  width: 16vw;
+}
+/*.stadistics-row1:first-child, .stadistics-row4:first-child {
+  margin-left: 2%;
+}*/
+section .stadistics-row2, section .stadistics-row3 {
+  margin: 1% 5%;
+  background-color: yellow;
+  display: block;
+  height: 30vh;
+  width: 76vw;
+}
+
+.alumnas-row1, .alumnas-row2, .alumnas-row4, .alumnas-row5 {
+  margin: 1% 2% ;
+  background-color: blue;
+  display: inline-block;
+  height: 20vh;
+  width: 16vw;
+}
+
+section ul li button {
+  display: inline-block;
+}
+.contenedorTabs{
+  text-align: center;
+  width: 58%;
+}
+
+#seccionContenido {
+
+  width: 88%;
+}
