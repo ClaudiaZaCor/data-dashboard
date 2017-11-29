@@ -4,43 +4,80 @@
   padding: 0;
   box-sizing: border-box;
   font-family: sans-serif;
-  outline: 1px solid green;
+  /*outline: 1px solid green;*/
 }
 header {
   text-align: center;
   height: 12vh;
   width: 99.9%;
+  background-color: white;
 }
 nav {
   width: 12%;
   position: absolute;
+  background-color:#ffc107;
 }
 section {
   position: relative;
   left: 12%;
+  background-color: black;
+}
+/* ...................CLASES REUTILIZABLES.........................*/
+.none {
+  display: none;
 }
 
-
 /* ...............................HEADER.................................*/
-.box1, .box2, .box3 {
+.box1, .box3 {
   display: inline-block;
-  height: 10vh;
+  height: 12vh;
 }
 .box1 {
   float: left;
   width: 8vw;
+  background-color: #ffc107;
+}
+.fa-bars {
+  color: white;
+  margin-top: 15px;
 }
 .box2 {
+  display: inline-block;
+  height: 10vh;
   width: 16vw;
+}
+.box2 span {
+  text-align: center;
+  font-family: 'Arimo', sans-serif;
+  letter-spacing: 2px;
+  margin-top: 15px;
+  margin-left: 8px;
+  font-size: 13px;
 }
 header div img {
   height: 8vh;
   width: 16vw;
+  padding: 0;
 }
 .box3 {
   float: right;
   width: 24vw;
   font-weight: 600;
+}
+.fa-user-circle-o {
+  margin-top: 15px;
+  margin-right: 150px;
+  display: inline-block;
+  position: absolute;
+  height: 8vh;
+  width: 8vw;
+}
+.saludo {
+  margin-top: 25px;
+  margin-left: 100px;
+  display: inline-block;
+  font-family: 'Cabin', sans-serif;
+  letter-spacing: 1px;
 }
 li {
   padding: 2%;
@@ -51,11 +88,19 @@ li {
 
 
 section .stadistics-row1, section .stadistics-row4 {
-  margin: 1% 2% ;
-  background-color: green;
   display: inline-block;
+  height: 25vh;
+  width: 22vw;
+  margin-left: 40px;
+  margin: 20px;
+  background-color: green;
+}
+.barras {
   height: 20vh;
-  width: 16vw;
+  margin-top: 30px;
+  margin-left:10px;
+  padding: 0px;
+  position: fixed;
 }
 /*.stadistics-row1:first-child, .stadistics-row4:first-child {
   margin-left: 2%;
@@ -75,7 +120,17 @@ section .stadistics-row2, section .stadistics-row3 {
   height: 20vh;
   width: 16vw;
 }
-
+.menu li {
+  text-align: center;
+  border-bottom-color: white;
+  font-family: 'Cabin', sans-serif;
+}
+.sede{
+  background-color: black;
+  color: white;
+  height: 7vh;
+  padding: 15px;
+}
 section ul li button {
   display: inline-block;
 }
@@ -84,7 +139,18 @@ section ul li button {
   width: 58%;
 }
 
-#seccionContenido {
-
+.seccionContenido {
   width: 88%;
+  height: 7vh;
+}
+
+
+
+.pais {
+  border: 2px solid #000;
+  list-style: none;
+}
+.ciudad {
+  border: 1px solid #000;
+  list-style: none;
 }
