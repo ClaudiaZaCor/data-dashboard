@@ -89,30 +89,39 @@ function mostrarGeneration4(event){
 
 /*botones dentro de generaciones*/
 var mostrarOcultarEstadisticasAlumnas = function(e) {
-
   var tabSeleccionado = e.target.dataset.tabSeleccionado;
   var estadisticas = document.querySelector('.estadisticas');
   var alumnas = document.querySelector('.alumnas');
+  var general = document.querySelector('.general');
 
   if (tabSeleccionado === 'tabEstadisticas') {
-    // ocultar alumnas
+    // ocultar alumnas y general
     alumnas.style.display = 'none';
+    general.style.display = 'none';
     // mostrar estadisticas
     estadisticas.style.display = 'block';
   } else if (tabSeleccionado === 'tabAlumnas') {
-    console.log('vamos a almorzar');
-    // ocultar estadisticas
+    // ocultar estadisticas y general
     estadisticas.style.display = 'none';
+    general.style.display = 'none';
     // mostrar alumnas
     alumnas.style.display = 'block';
+  } else if (tabSeleccionado === 'tabGeneral') {
+    // ocultar estadisticas y alumnas
+    estadisticas.style.display = 'none';
+    alumnas.style.display = 'none';
+    // mostrar general
+    general.style.display = 'block';
   }
 };
 var cargarEstadisticasAlumnas = function() {
   var estadisticas = document.querySelector('.estadisticas');
   var alumnas = document.querySelector('.alumnas');
+  var general = document.querySelector('.general');
 
   estadisticas.style.display = 'none';
   alumnas.style.display = 'none';
+  general.style.display = 'none';
 
   var elementosTab = document.getElementsByClassName('tab');
   for (var i = 0; i < elementosTab.length; i++) {
@@ -131,7 +140,5 @@ cOne.addEventListener('click', mostrarGeneration);
 cTwo.addEventListener('click', mostrarGeneration2);
 cThree.addEventListener('click', mostrarGeneration3);
 cFour.addEventListener('click', mostrarGeneration4);
-
-
 
 cargarEstadisticasAlumnas();
