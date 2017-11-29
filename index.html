@@ -12,6 +12,7 @@
   <!-- ...........................CUERPO.............................-->
   <body>
     <!--CABECERA-->
+
     <header>
       <div class="box1"><i class="fa fa-bars fa-3x" aria-hidden="true"></i></div>
       <div class="box2"><img src="assets/images/logo-laboratoria.png" alt="logo-laboratoria"><span> DASHBOARD </span></div>
@@ -21,7 +22,7 @@
     <!-- menu desplegable -->
     <nav id="menu">
       <ul>
-        <li>General</li>
+        <li class="inline"><button type="button" name="button" data-tab-seleccionado="tabGeneral" class="tab">General</button></li>
         <li class="sede">Sedes</li>
           <ul>
             <li class="pais pOne none">Peru</li>
@@ -64,21 +65,67 @@
     <section class="seccionContenido contenedor">
       <!--Botones Estadisticas y Alumnas-->
       <ul class="contenedorTabs">
+        <li class="inline"><button type="button" name="button" data-tab-seleccionado="tabGeneral" class="tab none">General</button></li>
         <li class="inline"><button type="button" name="button" data-tab-seleccionado="tabEstadisticas" class="tab">Estadisticas</button></li>
         <li class="inline"><button type="button" name="button" data-tab-seleccionado="tabAlumnas" class="tab">Alumnas</button></li>
       </ul>
       <!--Contenido de los botones Estadisticas y columnas-->
       <div>
         <!--Contenido del boton Estadisticas-->
+        <article class="general contenido">
+          <div class="general-row3"></div>
+        </article>
+        <!--Contenido del boton Estadisticas-->
         <article class="estadisticas contenido">
-          <div class="stadistics-row1"><img class="barras" src="assets/images/bar-graph.png" alt="grafico-de-barras"></div>
-          <div class="stadistics-row1"></div>
-          <div class="stadistics-row1"></div>
-          <div class="stadistics-row2"></div>
-          <div class="stadistics-row3"></div>
-          <div class="stadistics-row4"></div>
-          <div class="stadistics-row4"></div>
-          <div class="stadistics-row4"></div>
+          <div class="stadistics-row1">
+            <img class="barras" src="assets/images/bar-graph.png" alt="grafico-de-barras">
+            <span class="enrol">ENROLLEMENT</span>
+            <div class="number-box1"></div>
+            <div class="percentage-box1"></div>
+          </div>
+          <div class="stadistics-row1">
+            <img class="graf-lineas" src="assets/images/graph.png" alt="grafico-de-lineas">
+            <span class="ach">ACHIEVEMENT</span>
+            <div class="number-box2"></div>
+            <div class="percentage-box2"></div>
+          </div>
+          <div class="stadistics-row1"><img class="nps" src="assets/images/graph.png" alt="nps">
+            <span class="net">NET PROMOTER SCORE</span>
+            <div class="percentage1-box3"></div>
+            <div class="percentage2-box3"></div>
+          </div>
+          <div class="stadistics-row2">
+            <img class="graf-rectang" src="assets/images/rectangular-graphic.png" alt="grafico-rectangular">
+            <img class="graf-circ" src="assets/images/circle-graphic.png" alt="grafico-circular">
+            <span class="tech">TECH SKILLS</span>
+            <div class="number-box4"></div>
+            <div class="percentage-box4"></div>
+          </div>
+          <div class="stadistics-row3">
+            <img class="graf-rectang" src="assets/images/rectangular-graphic.png" alt="grafico-rectangular">
+            <img class="graf-circ" src="assets/images/circle-graphic.png" alt="grafico-circular">
+            <span class="soft">SOFT SKILLS</span>
+            <div class="number-box5"></div>
+            <div class="percentage-box5"></div>
+          </div>
+          <div class="stadistics-row4">
+            <img class="graf-lineas" src="assets/images/graph.png" alt="grafico-de-lineas">
+            <span class="satisf">STUDENT SATISFACTION</span>
+            <div class="number-box6"></div>
+            <div class="percentage-box6"></div>
+          </div>
+          <div class="stadistics-row4">
+            <img class="graf-lineas" src="assets/images/graph.png" alt="grafico-de-lineas">
+            <span class="rating">TEACHER RATING</span>
+            <div class="number-box7"></div>
+            <div class="percentage-box7"></div>
+          </div>
+          <div class="stadistics-row4">
+            <img class="graf-lineas" src="assets/images/graph.png" alt="grafico-de-lineas">
+            <span class="jedi">JEDI MASTER RATING</span>
+            <div class="number-box8"></div>
+            <div class="percentage-box8"></div>
+          </div>
         </article>
         <!--Contenido del boton Alumnas-->
         <article class="alumnas contenido">
@@ -116,3 +163,4 @@
     <script src="./js/app.js"></script>
   </body>
 </html>
+
