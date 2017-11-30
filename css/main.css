@@ -3,14 +3,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
-  /*outline: 1px solid green;*/
+  font-family: 'Cabin', sans-serif;
+  outline: 1px solid red;
 }
 body {
   background-color: lightgrey;
 }
 header {
-  text-align: center;
   height: 12vh;
   width: 99.9%;
   background-color: white;
@@ -23,75 +22,152 @@ nav {
 section {
   position: relative;
   left: 12%;
-  background-color: black;
 }
 /* ...................CLASES REUTILIZABLES.........................*/
 .none {
   display: none;
 }
+.inline {
+  display: inline-block;
+}
+.block {
+  display: block;
+}
+/* ...............................HEAD.................................*/
 
-/* ...............................HEADER.................................*/
-.box1, .box3 {
-  display: inline-block;
-  height: 12vh;
-}
-.box1 {
-  float: left;
-  width: 8vw;
-  background-color: #ffc107;
-}
-.fa-bars {
-  color: white;
-  margin-top: 15px;
-}
-.box2 {
-  display: inline-block;
+/*HEADER*/
+header img {
   height: 10vh;
-  width: 16vw;
-  margin: 0px;
+  width: 18vw;
+  margin: 1vh;
 }
-.box2 span {
+.user{
+  display: inline-block;
+  float: right;
+  height: 12vh;
+  width: 20vw;
+  font-weight: 600;
+}
+.fa-user-circle-o {
+  display: inline-block;
+  position: absolute;
+  margin: 5px 30px 0 30px;
+}
+.greetings {
+  display: inline-block;
+  margin: 20px 0 0 100px;
+  font-family: 'Cabin', sans-serif;
+  letter-spacing: 1px;
+}
+
+/*MENU DESPLEGABLE*/
+li {
+  padding: 3%;
+  color: rgb(69, 68, 79);
+}
+.alu {
+  background-color: rgb(127, 186, 220);
   text-align: center;
-  font-family: 'Arimo', sans-serif;
-  letter-spacing: 4px;
-  margin-top: 0px;
-  margin-left: 17px;
-  font-size: 10px;
 }
-header div img {
-  height: 8vh;
+/*boton general y sede*/
+.overview, .sede {
+  background-color:#ffc107;
+  color:rgb(69, 68, 79);
+  height: 7vh;
+  padding: 15px;
+  border: 1px solid white;
+}
+.overview:hover, .sede:hover {
+  background-color: rgba(110, 118, 120, 0.79);
+}
+/*desplegable pais*/
+.pais {
+  border-bottom: 1px solid white;
+  background-color: #524e4e;
+  color: white;
+  text-align: center;
+}
+/*desplegable ciudad*/
+.ciudad, .ciudad2, .ciudad3 {
+  list-style: none;
+  padding-left: 15px;
+  border: 1px solid white;
+}
+/*desplegable generacion*/
+.generation, .generation2, .generation3, .generation4 {
+  background-color: #b9b89f;
+  text-align: center;
+  border: 1px solid white;
+}
+
+/*CONTENIDO POR BOTONES*/
+
+/*BACKGROUND GENERAL*/
+section .general-row1 {
+  background-color: rgb(33, 187, 208);
+  display: block;
+  height: 60vh;
+
+}
+/*BACKGROUND ESTADISTICAS*/
+.barras, .graf-lineas, .nps {
+  height: 20vh;
+  width: 22vw;
+  position: relative;
+}
+section .stadistics-row1, section .stadistics-row4 {
+  display: inline-block;
+  height: 30vh;
+  width: 22vw;
+  margin: 30px;
+  background-color: green;
+}
+section .stadistics-row2, section .stadistics-row3 {
+  margin: 1% 5%;
+  background-color: yellow;
+  display: block;
+  height: 50vh;
+  width: 76vw;
+}
+.cuadro {
+  text-align: center;
+  height: 10vh;
+}
+.number-box1, .percentage-box1 {
+  height: 9.5vh;
+}
+/*BACKGROUND ALUMNAS*/
+.alumnas-row1, .alumnas-row2, .alumnas-row3, .alumnas-row4, .alumnas-row5 {
+  margin: 1% 2% ;
+  background-color: blue;
+  display: inline-block;
+  height: 20vh;
   width: 16vw;
 }
+
+
+
+/*
+.sede, .overview {
+  background-color:#ffc107;
+    color:gray;
+    height: 7vh;
+    padding: 15px;
+    font-family: 'Arimo', sans-serif;
+    border: 2px solid white;
+}
+
 img {
   line-height: 2px;
   margin-top: 0px;
 }
-.box3 {
-  float: right;
-  width: 24vw;
-  font-weight: 600;
-}
-.fa-user-circle-o {
-  margin-top: 15px;
-  margin-right: 150px;
-  display: inline-block;
-  position: absolute;
-  height: 8vh;
-  width: 8vw;
-}
-.saludo {
-  margin-top: 25px;
-  margin-left: 100px;
-  display: inline-block;
-  font-family: 'Cabin', sans-serif;
-  letter-spacing: 1px;
-}
+
+
+
 li {
   padding: 2%;
 }
-.inline {
-  display: inline-block;
-}
+
 
 section .stadistics-row1, section .stadistics-row4 {
   display: inline-block;
@@ -115,9 +191,7 @@ section .stadistics-row2, section .stadistics-row3 {
   height: 50vh;
   width: 76vw;
 }
-.graf-rectang, .graf-circ {
-  margin-top: 55px;
-}
+
 .alumnas-row1, .alumnas-row2, .alumnas-row4, .alumnas-row5 {
   margin: 1% 2% ;
   background-color: blue;
@@ -125,30 +199,12 @@ section .stadistics-row2, section .stadistics-row3 {
   height: 20vh;
   width: 16vw;
 }
-/*.menu li {
-  text-align: center;
-  border-bottom-color: white;
-  font-family: 'Cabin', sans-serif;
-}*/
-.sede, .general {
-  background-color:#ffc107;
-    color:gray;
-    height: 7vh;
-    padding: 15px;
-    font-family: 'Arimo', sans-serif;
-    border: 2px solid white;
-}
+
+
 section ul li button {
   display: inline-block;
 }
-.contenedorTabs{
-  text-align: center;
-  width: 58%;
-}
-.seccionContenido {
-  width: 88%;
-  height: 7vh;
-}
+
 .pais {
   border-bottom: 2px solid white;
   list-style: none;
@@ -169,9 +225,6 @@ section ul li button {
   text-align: center;
 }
 
-span,  .number-box1, .percentage-box1{
-  background-color: aqua;
-}
 
 section .general-row3 {
   margin: 1% 5%;
@@ -180,3 +233,72 @@ section .general-row3 {
   height: 30vh;
   width: 76vw;
 }
+
+
+
+
+.contenedor{
+  width: 900px;
+  margin: 0 auto;
+  display: block;
+}
+
+#seccionInicial .logo{
+  width: 60px;
+  height: 40px;
+}
+#seccionInicial .titulo{
+  color: #fcb425;
+  font-size: 3em;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+#seccionInicial p.descripcionEmpresa{
+  color: #1a1a1a;
+  font-size: 1em;
+  font-family: 'Arial',sans-serif;
+  margin-bottom: 30px;
+}
+
+#seccionContenido .contenedorTabs{
+  width: 100%;
+  color: white;
+  font-size: 1.5em;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.contenedorTabs li{
+  list-style: none;
+  display: inline-block;
+  padding-right: 20px;
+}
+.tab{
+  color: white;
+  background-color: #fcb425;
+  border-radius: 5%;
+  border-bottom: none;
+  padding: 10px;
+  width: 100px;
+}
+.contenido{
+  margin-bottom: 15px;
+}
+
+.divImg, .divTexto{
+  display: inline-block;
+}
+.fotoComida{
+  width: 500px;
+  height: 400px;
+}
+
+.divTexto{
+  position: absolute;
+  padding-left: 36px;
+}
+.divTexto h3{
+  font-size: 2em;
+  font-family: monospace;
+}
+*/

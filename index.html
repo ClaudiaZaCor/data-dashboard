@@ -12,76 +12,100 @@
   <!-- ...........................CUERPO.............................-->
   <body>
     <!--CABECERA-->
-
     <header>
-      <div class="box1"><i class="fa fa-bars fa-3x" aria-hidden="true"></i></div>
-      <div class="box2"><img src="assets/images/logo-laboratoria.png" alt="logo-laboratoria"><span> DASHBOARD </span></div>
-      <div class="box3"><i class="fa fa-user-circle-o fa-3x" aria-hidden="true"></i><span class="saludo">Hola <br> Valeria Schmidt!</span></div>
+      <img src="assets/images/logo-laboratoria.png" alt="logo-laboratoria">
+      <div class="user"><i class="fa fa-user-circle-o fa-4x" aria-hidden="true"></i><span class="greetings">Hola!, <br> Valeria Schmidt!</span></div>
   	</header>
 
-    <!-- menu desplegable -->
+    <!-- MENU DESPLEGABLE -->
     <nav id="menu">
       <ul>
-        <li class="inline"><button type="button" name="button" data-tab-seleccionado="tabGeneral" class="tab">General</button></li>
+        <li data-tab-seleccionado="tabGeneral" class="overview tab">General</li>
         <li class="sede">Sedes</li>
           <ul>
-            <li class="pais pOne none">Peru</li>
+            <li id="p1" class="pais none">Peru</li>
               <ul>
-                <li class="ciudad cOne none">Lima</li>
+                <li id="c1" class="ciudad none">Lima</li>
                   <ul>
-                    <li class="generation none">2017-2</li>
-                    <li class="generation none">2017-1</li>
-                    <li class="generation none">2016-2</li>
+                    <li id="g1" data-tab-seleccionado="tabEstadisticas" class="generation tab none">2017-2</li>
+                      <ul>
+                        <li id="a1" data-tab-seleccionado="tabAlumnas" class="alu tab none">Alumnas</li>
+                      </ul>
+                    <li id="g2" data-tab-seleccionado="tabEstadisticas" class="generation tab none">2017-1</li>
+                    <ul>
+                      <li id="a2" data-tab-seleccionado="tabAlumnas" class="alu tab none">Alumnas</li>
+                    </ul>
+                    <li id="g3" data-tab-seleccionado="tabEstadisticas" class="generation tab none">2016-2</li>
+                    <ul>
+                      <li id="a3" data-tab-seleccionado="tabAlumnas" class="alu tab none">Alumnas</li>
+                    </ul>
                   </ul>
-                <li class="ciudad cTwo none">Arequipa</li>
+                <li id="c2" class="ciudad none">Arequipa</li>
                   <ul>
-                    <li class="generation2 none">2017-1</li>
-                    <li class="generation2 none">2016-2</li>
+                    <li id="g4" data-tab-seleccionado="tabEstadisticas" class="generation2 tab none">2017-1</li>
+                    <ul>
+                      <li id="a4" data-tab-seleccionado="tabAlumnas" class="alu tab none">Alumnas</li>
+                    </ul>
+                    <li id="g5" data-tab-seleccionado="tabEstadisticas" class="generation2 tab none">2016-2</li>
+                    <ul>
+                      <li id="a5" data-tab-seleccionado="tabAlumnas" class="alu tab none">Alumnas</li>
+                    </ul>
                   </ul>
               </ul>
-            <li class="pais pTwo none">Chile</li>
+            <li id="p2" class="pais none">Chile</li>
               <ul>
-                <li class="ciudad2 cThree none">Santiago de Chile</li>
+                <li id="c3" class="ciudad2 none">Santiago de Chile</li>
                   <ul>
-                    <li class="generation3 none">2017-2</li>
-                    <li class="generation3 none">2017-1</li>
-                    <li class="generation3 none">2016-2</li>
+                    <li id="g6" data-tab-seleccionado="tabEstadisticas" class="generation3 tab none">2017-2</li>
+                    <ul>
+                      <li id="a6" data-tab-seleccionado="tabAlumnas" class="alu tab none">Alumnas</li>
+                    </ul>
+                    <li id="g7" data-tab-seleccionado="tabEstadisticas" class="generation3 tab none">2017-1</li>
+                    <ul>
+                      <li id="a7" data-tab-seleccionado="tabAlumnas" class="alu tab none">Alumnas</li>
+                    </ul>
+                    <li id="g8" data-tab-seleccionado="tabEstadisticas" class="generation3 tab none">2016-2</li>
+                    <ul>
+                      <li id="a8" data-tab-seleccionado="tabAlumnas" class="alu tab none">Alumnas</li>
+                    </ul>
                   </ul>
               </ul>
-            <li class="pais pThree none">Mexico</li>
+            <li id="p3" class="pais none">Mexico</li>
               <ul>
-                <li class="ciudad3 cFour none">Ciudad de Mexico</li>
+                <li id="c4" class="ciudad3 none">Ciudad de Mexico</li>
                   <ul>
-                    <li class="generation4 none">2017-2</li>
-                    <li class="generation4 none">2017-1</li>
+                    <li id="g9" data-tab-seleccionado="tabEstadisticas" class="generation4 tab none">2017-2</li>
+                    <ul>
+                      <li id="a9" data-tab-seleccionado="tabAlumnas" class="alu tab none">Alumnas</li>
+                    </ul>
+                    <li id="g10" data-tab-seleccionado="tabEstadisticas" class="generation4 tab none">2017-1</li>
+                    <ul>
+                      <li id="a10" data-tab-seleccionado="tabAlumnas" class="alu tab none">Alumnas</li>
+                    </ul>
                   </ul>
               </ul>
           </ul>
       </ul>
     </nav>
 
-
     <!--Contenedor de la generacion de una sede-->
     <section class="seccionContenido contenedor">
-      <!--Botones Estadisticas y Alumnas-->
-      <ul class="contenedorTabs">
-        <li class="inline"><button type="button" name="button" data-tab-seleccionado="tabGeneral" class="tab none">General</button></li>
-        <li class="inline"><button type="button" name="button" data-tab-seleccionado="tabEstadisticas" class="tab">Estadisticas</button></li>
-        <li class="inline"><button type="button" name="button" data-tab-seleccionado="tabAlumnas" class="tab">Alumnas</button></li>
-      </ul>
-      <!--Contenido de los botones Estadisticas y columnas-->
-      <div>
-        <!--Contenido del boton Estadisticas-->
+        <!--Contenido del boton General-->
         <article class="general contenido">
-          <div class="general-row3"></div>
+          <div class="general-row1"></div>
         </article>
+    </section>
+    <section class="seccionContenido contenedor">
         <!--Contenido del boton Estadisticas-->
         <article class="estadisticas contenido">
           <div class="stadistics-row1">
+            <span class="block">ENROLLEMENT</span>
+            <div class="block cuadro">
+              <div class="number-box1 inline"></div>
+              <div class="percentage-box1 inline"></div>
+            </div>
             <img class="barras" src="assets/images/bar-graph.png" alt="grafico-de-barras">
-            <span class="enrol">ENROLLEMENT</span>
-            <div class="number-box1"></div>
-            <div class="percentage-box1"></div>
+
           </div>
           <div class="stadistics-row1">
             <img class="graf-lineas" src="assets/images/graph.png" alt="grafico-de-lineas">
@@ -155,12 +179,11 @@
             <div class="alumnas-row5"></div>
           </div>
         </article>
-      </div>
     </section>
+
 		<!-- Base de datos -->
 		<script src="./js/data.js"></script>
 		<!-- archivos JS -->
     <script src="./js/app.js"></script>
   </body>
 </html>
-
