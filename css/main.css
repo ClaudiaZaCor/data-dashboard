@@ -6,71 +6,58 @@
   font-family: sans-serif;
   /*outline: 1px solid green;*/
 }
-
 body {
   background-color:lightgray;
 }
-
 header {
   text-align: center;
   height: 12vh;
   width: 99.9%;
   background-color: white;
 }
-
 nav {
   width: 12%;
   position: absolute;
   background-color:#ffc107;
 }
-
 section {
   position: relative;
   left: 12%;
   background-color: black;
 }
-
 /* ...................CLASES REUTILIZABLES.........................*/
 .none {
   display: none;
 }
-
 .inline {
   display: inline-block;
 }
-
 .block {
   display: block;
 }
-
 /* ...............................HEADER.................................*/
 .box1, .box3 {
   display: inline-block;
   height: 12vh;
 }
-
 .box1 {
   float: left;
   width: 8vw;
   background-color: #ffc107;
 }
-
 .fa-bars {
   color: white;
   margin-top: 15px;
 }
-
 .fa-bars:active {
   color: black;
 }
-
 .box2 {
   display: inline-block;
   height: 10vh;
   width: 16vw;
   margin: 0px;
 }
-
 .box2 span {
   text-align: center;
   font-family: 'Arimo', sans-serif;
@@ -80,23 +67,19 @@ section {
   font-size: 10px;
   position: absolute;
 }
-
 header div img {
   height: 60px;
   width: 18vw;
 }
-
 img {
   line-height: 2px;
   margin-top: 0px;
 }
-
 .box3 {
   float: right;
   width: 24vw;
   font-weight: 600;
 }
-
 .fotis {
   margin-top: 0px;
   display: inline-block;
@@ -109,7 +92,6 @@ img {
 .fotis:hover {
   opacity: .70;
 }
-
 .saludo {
   margin-top: 25px;
   margin-left: 0px;
@@ -121,16 +103,13 @@ img {
   float: right;
   letter-spacing: 1px;
 }
-
 .saludo:hover {
   color: #ffc107
 }
-
 /*-------MENU DESPLEGABLE------------------*/
 li {
   padding: 2%;
 }
-
 .sede, .overview.tab {
   background-color:#ffc107;
   color:gray;
@@ -141,15 +120,12 @@ li {
   letter-spacing: 2px;
   border: 2px solid white;
 }
-
 .sede:hover, .overview.tab:hover {
   color:white;
 }
-
 section ul li button {
   display: inline-block;
 }
-
 /*------------------ESTADISTICAS-----------------------*/
 section .stadistics-row1, section .stadistics-row4 {
   display: inline-block;
@@ -159,19 +135,16 @@ section .stadistics-row1, section .stadistics-row4 {
   margin: 30px;
   background-color: white;
 }
-
 .barras, .graf-lineas, .nps {
   height: 20vh;
   margin-top: 30px;
   padding: 0px;
   position: relative;
 }
-
 .graf-text {
   font-family: 'Open Sans', sans-serif;
   font-weight: bolder;
 }
-
 section .stadistics-row2, section .stadistics-row3 {
   margin: 1% 5%;
   background-color: white;
@@ -179,11 +152,9 @@ section .stadistics-row2, section .stadistics-row3 {
   height: 50vh;
   width: 76vw;
 }
-
 .graf-rectang, .graf-circ {
   margin-top: 55px;
 }
-
 .cuadro {
   text-align: center;
   height: 10vh;
@@ -191,7 +162,6 @@ section .stadistics-row2, section .stadistics-row3 {
 .number-box1, .percentage-box1 {
   height: 9.5vh;
 }
-
 /*-------------LABORATORIANS-------------*/
 .alumnas-row1, .alumnas-row2, .alumnas-row3 {
   margin: 1% 2% 2% 1%;
@@ -199,17 +169,14 @@ section .stadistics-row2, section .stadistics-row3 {
   height: 20vh;
   width: 16vw;
 }
-
 .contenedorTabs{
   text-align: left;
   width: 70%;
 }
-
 .seccionContenido {
   width: 100%;
   height: 7vh;
 }
-
 #stadistics, #laboratorians {
   background-color: black;
   border-bottom: 2px solid white;
@@ -221,11 +188,9 @@ section .stadistics-row2, section .stadistics-row3 {
   width: 100%;
   margin: 0px 100px 0px 80px;
 }
-
 #stadistics:hover, #laboratorians:hover {
   background-color: #ffc107
 }
-
 /*--------------MENU DESPLEGABLE----------------*/
 .pais {
   border-bottom: 2px solid white;
@@ -235,33 +200,28 @@ section .stadistics-row2, section .stadistics-row3 {
   font-family: 'Cabin', sans-serif;
   text-align: center;
 }
-
 .ciudad, .ciudad2, .ciudad3 {
   background-color: lightgrey;
   font-family: 'Cabin', sans-serif;
   list-style: none;
   text-align: center;
 }
-
 .generation, .generation2, .generation3, .generation4 {
   background-color: white;
   font-family: 'Cabin', sans-serif;
   text-align: center;
 }
-
 .alu  {
   background-color: #ffc107;
   font-family: 'Cabin', sans-serif;
   text-align: center;
 }
-
 section .general-row3 {
   margin: 1% 5%;
   display: inline-block;
   height: 30vh;
   width: 76vw;
 }
-
 .student1, .student2, .student3 {
   height: 24vh;
   width: 16vw;
@@ -269,7 +229,6 @@ section .general-row3 {
   margin: 1% 2% ;
   margin-left: 30px;
 }
-
 .contenedor{
   width: 100%;
   margin: 0px;

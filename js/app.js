@@ -1,14 +1,11 @@
 /* CREACION DE VARIABLES*/
-
 /* menu desplegable*/
 var sede = document.querySelector('.sede');
-
 var pais = document.querySelectorAll('.pais');
 /* paises*/
 var p1 = document.querySelector('#p1');
 var p2 = document.querySelector('#p2');
 var p3 = document.querySelector('#p3');
-
 var ciudad = document.querySelectorAll('.ciudad');
 var ciudad2 = document.querySelectorAll('.ciudad2');
 var ciudad3 = document.querySelectorAll('.ciudad3');
@@ -17,7 +14,6 @@ var c1 = document.querySelector('#c1');
 var c2 = document.querySelector('#c2');
 var c3 = document.querySelector('#c3');
 var c4 = document.querySelector('#c4');
-
 var generation = document.querySelectorAll('.generation');
 var generation2 = document.querySelectorAll('.generation2');
 var generation3 = document.querySelectorAll('.generation3');
@@ -44,16 +40,13 @@ var a7 = document.querySelector('#a7');
 var a8 = document.querySelector('#a8');
 var a9 = document.querySelector('#a9');
 var a10 = document.querySelector('#a10');
-
 /* FUNCIONES*/
-
 /* menu desplegable*/
 function mostrarPais(event) {
   for (var i = 0; i < pais.length; i++) {
     pais[i].classList.toggle('none');
   }
 };
-
 function mostrarCiudad(event) {
   for (var i = 0; i < ciudad.length; i++) {
     ciudad[i].classList.toggle('none');
@@ -69,7 +62,6 @@ function mostrarCiudad3(event) {
     ciudad3[i].classList.toggle('none');
   }
 };
-
 function mostrarGeneration(event) {
   for (var i = 0; i < generation.length; i++) {
     generation[i].classList.toggle('none');
@@ -90,7 +82,6 @@ function mostrarGeneration4(event) {
     generation4[i].classList.toggle('none');
   }
 };
-
 function mostrarAlumnas(event) {
   a1.classList.toggle('none');
 };
@@ -121,14 +112,12 @@ function mostrarAlumnas9(event) {
 function mostrarAlumnas10(event) {
   a10.classList.toggle('none');
 };
-
 /* botones dentro de generaciones*/
 function mostrarOcultarEstadisticasAlumnas(event) {
   var tabSeleccionado = event.target.dataset.tabSeleccionado;
   var estadisticas = document.querySelector('.estadisticas');
   var alumnas = document.querySelector('.alumnas');
   var general = document.querySelector('.general');
-
   if (tabSeleccionado === 'tabEstadisticas') {
     // ocultar alumnas y general
     alumnas.style.display = 'none';
@@ -153,30 +142,23 @@ function cargarEstadisticasAlumnas() {
   var estadisticas = document.querySelector('.estadisticas');
   var alumnas = document.querySelector('.alumnas');
   var general = document.querySelector('.general');
-
   estadisticas.style.display = 'none';
   alumnas.style.display = 'none';
   general.style.display = 'none';
-
   var elementosTab = document.getElementsByClassName('tab');
   for (var i = 0; i < elementosTab.length; i++) {
     elementosTab[i].addEventListener('click', mostrarOcultarEstadisticasAlumnas);
   }
 };
-
-
 /* LLAMADO DE LAS FUNCIONES*/
 sede.addEventListener('click', mostrarPais);
-
 p1.addEventListener('click', mostrarCiudad);
 p2.addEventListener('click', mostrarCiudad2);
 p3.addEventListener('click', mostrarCiudad3);
-
 c1.addEventListener('click', mostrarGeneration);
 c2.addEventListener('click', mostrarGeneration2);
 c3.addEventListener('click', mostrarGeneration3);
 c4.addEventListener('click', mostrarGeneration4);
-
 g1.addEventListener('click', mostrarAlumnas);
 g2.addEventListener('click', mostrarAlumnas2);
 g3.addEventListener('click', mostrarAlumnas3);
@@ -187,5 +169,4 @@ g7.addEventListener('click', mostrarAlumnas7);
 g8.addEventListener('click', mostrarAlumnas8);
 g9.addEventListener('click', mostrarAlumnas9);
 g10.addEventListener('click', mostrarAlumnas10);
-
 cargarEstadisticasAlumnas();
