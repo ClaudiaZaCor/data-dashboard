@@ -35,6 +35,14 @@ section {
   display: none;
 }
 
+.inline {
+  display: inline-block;
+}
+
+.block {
+  display: block;
+}
+
 /* ...............................HEADER.................................*/
 .box1, .box3 {
   display: inline-block;
@@ -52,6 +60,10 @@ section {
   margin-top: 15px;
 }
 
+.fa-bars:active {
+  color: black;
+}
+
 .box2 {
   display: inline-block;
   height: 10vh;
@@ -64,8 +76,9 @@ section {
   font-family: 'Arimo', sans-serif;
   letter-spacing: 4px;
   margin-top: 0px;
-  margin-left: 17px;
+  margin-left: -40px;
   font-size: 10px;
+  position: absolute;
 }
 
 header div img {
@@ -91,6 +104,10 @@ img {
   height: 12vh;
   width: 8vw;
   border-radius: 30px;
+  opacity: 100;
+}
+.fotis:hover {
+  opacity: .70;
 }
 
 .saludo {
@@ -105,56 +122,16 @@ img {
   letter-spacing: 1px;
 }
 
+.saludo:hover {
+  color: #ffc107
+}
+
+/*-------MENU DESPLEGABLE------------------*/
 li {
   padding: 2%;
 }
 
-.inline {
-  display: inline-block;
-}
-
-section .stadistics-row1, section .stadistics-row4 {
-  display: inline-block;
-  height: 25vh;
-  width: 22vw;
-  margin-left: 40px;
-  margin: 30px;
-  /*background-color: green;*/
-}
-
-.barras, .graf-lineas, .nps {
-  height: 20vh;
-  margin-top: 30px;
-  padding: 0px;
-  position: relative;
-}
-
-section .stadistics-row2, section .stadistics-row3 {
-  margin: 1% 5%;
-  /*background-color: yellow;*/
-  display: block;
-  height: 50vh;
-  width: 76vw;
-}
-
-.graf-rectang, .graf-circ {
-  margin-top: 55px;
-}
-
-.alumnas-row1, .alumnas-row2, .alumnas-row4, .alumnas-row5 {
-  margin: 1% 2% ;
-  background-color: blue;
-  display: inline-block;
-  height: 20vh;
-  width: 16vw;
-}
-/*.menu li {
-  text-align: center;
-  border-bottom-color: white;
-  font-family: 'Cabin', sans-serif;
-}*/
-
-.sede, .overview {
+.sede, .overview.tab {
   background-color:#ffc107;
   color:gray;
   height: 7vh;
@@ -165,36 +142,91 @@ section .stadistics-row2, section .stadistics-row3 {
   border: 2px solid white;
 }
 
+.sede:hover, .overview.tab:hover {
+  color:white;
+}
+
 section ul li button {
   display: inline-block;
 }
 
-/*.estadisticas contenido {
-  font-family: 'Cabin', sans-serif;
-}*/
+/*------------------ESTADISTICAS-----------------------*/
+section .stadistics-row1, section .stadistics-row4 {
+  display: inline-block;
+  height: 25vh;
+  width: 24vw;
+  margin-left: 40px;
+  margin: 30px;
+  background-color: white;
+}
+
+.barras, .graf-lineas, .nps {
+  height: 20vh;
+  margin-top: 30px;
+  padding: 0px;
+  position: relative;
+}
+
+.graf-text {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bolder;
+}
+
+section .stadistics-row2, section .stadistics-row3 {
+  margin: 1% 5%;
+  background-color: white;
+  display: block;
+  height: 50vh;
+  width: 76vw;
+}
+
+.graf-rectang, .graf-circ {
+  margin-top: 55px;
+}
+
+.cuadro {
+  text-align: center;
+  height: 10vh;
+}
+.number-box1, .percentage-box1 {
+  height: 9.5vh;
+}
+
+/*-------------LABORATORIANS-------------*/
+.alumnas-row1, .alumnas-row2, .alumnas-row3 {
+  margin: 1% 2% 2% 1%;
+  display: inline-block;
+  height: 20vh;
+  width: 16vw;
+}
 
 .contenedorTabs{
-  text-align: center;
-  width: 58%;
+  text-align: left;
+  width: 70%;
 }
 
 .seccionContenido {
-  width: 88%;
+  width: 100%;
   height: 7vh;
 }
 
-.stadistics, .laboratorians{
+#stadistics, #laboratorians {
   background-color: black;
   border-bottom: 2px solid white;
   color: white;
   font-family: 'Arimo', sans-serif;
   font-size: 12px;
   letter-spacing: 2px;
-  height: 30px;
+  height: 25px;
   width: 100%;
-  margin: 0px 30px 0px 70px;
+  margin: 0px 100px 0px 80px;
 }
 
+#stadistics:hover, #laboratorians:hover {
+  background-color: #ffc107
+}
+
+/*--------------MENU DESPLEGABLE----------------*/
 .pais {
   border-bottom: 2px solid white;
   list-style: none;
@@ -217,13 +249,29 @@ section ul li button {
   text-align: center;
 }
 
-/*span,  .number-box1, .percentage-box1{
-  background-color: aqua;
-}*/
+.alu  {
+  background-color: #ffc107;
+  font-family: 'Cabin', sans-serif;
+  text-align: center;
+}
 
 section .general-row3 {
   margin: 1% 5%;
-  display: block;
+  display: inline-block;
   height: 30vh;
   width: 76vw;
+}
+
+.student1, .student2, .student3 {
+  height: 24vh;
+  width: 16vw;
+  display: inline-block;
+  margin: 1% 2% ;
+  margin-left: 30px;
+}
+
+.contenedor{
+  width: 100%;
+  margin: 0px;
+  display: block;
 }

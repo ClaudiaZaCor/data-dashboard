@@ -23,3 +23,7 @@
 
 > Nota: No olvides que es una buena práctica describir tu proyecto en este
 > archivo `README.md` y también desplegar tu web a Github Pages :smiley:.
+
+Trabajo realizado por:
+1. Ana Lorena Diaz
+2. Claudia Zarate
