@@ -6,25 +6,30 @@
   font-family: sans-serif;
   /*outline: 1px solid green;*/
 }
+
 body {
-  background-color: lightgrey;
+  background-color:lightgray;
 }
+
 header {
   text-align: center;
   height: 12vh;
   width: 99.9%;
   background-color: white;
 }
+
 nav {
   width: 12%;
   position: absolute;
   background-color:#ffc107;
 }
+
 section {
   position: relative;
   left: 12%;
   background-color: black;
 }
+
 /* ...................CLASES REUTILIZABLES.........................*/
 .none {
   display: none;
@@ -35,21 +40,25 @@ section {
   display: inline-block;
   height: 12vh;
 }
+
 .box1 {
   float: left;
   width: 8vw;
   background-color: #ffc107;
 }
+
 .fa-bars {
   color: white;
   margin-top: 15px;
 }
+
 .box2 {
   display: inline-block;
   height: 10vh;
   width: 16vw;
   margin: 0px;
 }
+
 .box2 span {
   text-align: center;
   font-family: 'Arimo', sans-serif;
@@ -58,37 +67,48 @@ section {
   margin-left: 17px;
   font-size: 10px;
 }
+
 header div img {
-  height: 8vh;
-  width: 16vw;
+  height: 60px;
+  width: 18vw;
 }
+
 img {
   line-height: 2px;
   margin-top: 0px;
 }
+
 .box3 {
   float: right;
   width: 24vw;
   font-weight: 600;
 }
-.fa-user-circle-o {
-  margin-top: 15px;
-  margin-right: 150px;
+
+.fotis {
+  margin-top: 0px;
   display: inline-block;
-  position: absolute;
-  height: 8vh;
+  position: relative;
+  height: 12vh;
   width: 8vw;
+  border-radius: 30px;
 }
+
 .saludo {
   margin-top: 25px;
-  margin-left: 100px;
+  margin-left: 0px;
+  margin-bottom: 50px;
+  margin-right: 100px;
   display: inline-block;
-  font-family: 'Cabin', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  float: right;
   letter-spacing: 1px;
 }
+
 li {
   padding: 2%;
 }
+
 .inline {
   display: inline-block;
 }
@@ -99,8 +119,9 @@ section .stadistics-row1, section .stadistics-row4 {
   width: 22vw;
   margin-left: 40px;
   margin: 30px;
-  background-color: green;
+  /*background-color: green;*/
 }
+
 .barras, .graf-lineas, .nps {
   height: 20vh;
   margin-top: 30px;
@@ -110,14 +131,16 @@ section .stadistics-row1, section .stadistics-row4 {
 
 section .stadistics-row2, section .stadistics-row3 {
   margin: 1% 5%;
-  background-color: yellow;
+  /*background-color: yellow;*/
   display: block;
   height: 50vh;
   width: 76vw;
 }
+
 .graf-rectang, .graf-circ {
   margin-top: 55px;
 }
+
 .alumnas-row1, .alumnas-row2, .alumnas-row4, .alumnas-row5 {
   margin: 1% 2% ;
   background-color: blue;
@@ -130,25 +153,48 @@ section .stadistics-row2, section .stadistics-row3 {
   border-bottom-color: white;
   font-family: 'Cabin', sans-serif;
 }*/
-.sede, .general {
+
+.sede, .overview {
   background-color:#ffc107;
-    color:gray;
-    height: 7vh;
-    padding: 15px;
-    font-family: 'Arimo', sans-serif;
-    border: 2px solid white;
+  color:gray;
+  height: 7vh;
+  padding: 15px;
+  font-family: 'Arimo', sans-serif;
+  font-size: 15px;
+  letter-spacing: 2px;
+  border: 2px solid white;
 }
+
 section ul li button {
   display: inline-block;
 }
+
+/*.estadisticas contenido {
+  font-family: 'Cabin', sans-serif;
+}*/
+
 .contenedorTabs{
   text-align: center;
   width: 58%;
 }
+
 .seccionContenido {
   width: 88%;
   height: 7vh;
 }
+
+.stadistics, .laboratorians{
+  background-color: black;
+  border-bottom: 2px solid white;
+  color: white;
+  font-family: 'Arimo', sans-serif;
+  font-size: 12px;
+  letter-spacing: 2px;
+  height: 30px;
+  width: 100%;
+  margin: 0px 30px 0px 70px;
+}
+
 .pais {
   border-bottom: 2px solid white;
   list-style: none;
@@ -157,26 +203,27 @@ section ul li button {
   font-family: 'Cabin', sans-serif;
   text-align: center;
 }
+
 .ciudad, .ciudad2, .ciudad3 {
   background-color: lightgrey;
   font-family: 'Cabin', sans-serif;
   list-style: none;
   text-align: center;
 }
+
 .generation, .generation2, .generation3, .generation4 {
   background-color: white;
   font-family: 'Cabin', sans-serif;
   text-align: center;
 }
 
-span,  .number-box1, .percentage-box1{
+/*span,  .number-box1, .percentage-box1{
   background-color: aqua;
-}
+}*/
 
 section .general-row3 {
   margin: 1% 5%;
-  background-color: rgb(33, 187, 208);
-  display: block;
+  display: block;
   height: 30vh;
   width: 76vw;
 }
